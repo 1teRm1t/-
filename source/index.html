@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-regular.woff2" as="font" type="font/woff2">
+  <link href="css/slyle.min.css" rel="stylesheet">
+  <title>Путешествие по Европе</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__inner">
+      <div class="page-header__logo-wrap">
+        <a class="page-header__logo-link" href="#">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/logo.svg">
+            <source media="(min-width: 768px)" srcset="img/logo.svg">
+            <img class="page-header__logo" src="img/logo-mobile.svg" width="44" height="18" alt="Логотип компании">
+          </picture>
+        </a>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span></span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-link" href="">О путешествии</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-link" href="">Цены</a>
+          </li>
+          <li class="main-nav__list-item main-nav__list-item--phone">
+            <a class="main-nav__list-link main-nav__list-link--phone" href="tel:+749978468446">
+              <svg class="main-nav__list-link-icon" width="17" height="24" viewBox="0 0 17 24" fill="none">
+                <path class="main-nav__list-link-pic"
+                  d="M1.39635 6.62432C1.31179 5.42623 1.57753 4.24606 2.28114 3.29684C2.89115 2.43632 3.68536 1.96636 4.64264 1.69172C5.44893 1.4525 5.9774 1.74561 6.20992 2.64204C6.54211 3.98224 7.01622 5.3225 7.18836 6.73361C7.24271 7.35485 6.84108 8.23322 6.40623 8.6856C5.31608 9.75888 5.54257 10.5399 6.37 12.1643C6.62669 12.6881 7.03436 13.5934 7.82858 14.7919C8.65601 15.9992 9.09389 16.6472 10.1569 16.0975C11.3376 15.5035 12.1983 15.8855 13.0891 16.8444C13.6931 17.5369 14.3574 18.1318 14.9614 18.8243C15.8341 19.8542 15.7949 20.5641 15.1124 21.2915C13.8833 22.6309 11.854 23.0736 10.3441 22.1766C9.51064 21.6881 8.68018 21.0487 8.01884 20.303C5.10471 16.9825 3.00291 13.1212 1.73759 8.76321C1.53526 8.02654 1.44165 7.28104 1.39635 6.62432Z"
+                  stroke-width="2" stroke-miterlimit="10" />
+              </svg>
+              +7 (499) -784-684-46</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="main-content main-content--wrap">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="img/main-backdrop-desktop.jpg">
+        <source media="(min-width: 768px)" srcset="img/main-backdrop-tablet.jpg">
+        <img src="img/main-backdrop-mobile.jpg">
+      </picture>
+      <div class="main-content__inner container">
+        <h1 class="main-content__title">Путешествие по Европе</h1>
+        <p class="main-content__desc">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а
+          также потрясающая красота природы.</p>
+        <div class="main-content__link">
+          <a class="btn main-content__link-btn" href="">Cмотреть тур</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="places places--wrap container">
+      <div class="places__title-inner">
+        <h2 class="places__title">Места посещения</h2>
+        <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+      </div>
+      <ul class="places__list">
+        <li class="places__item places__item--greece">
+          <div class="places__item-action">
+            <a class="places__item-action-link" href="">Смотреть подробнее</a>
+          </div>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/places-Greece-big.jpg">
+            <source media="(min-width: 768px)" srcset="img/places-Greece.jpg">
+            <img src="img/places-Greece.jpg">
+          </picture>
+          <div class="places__item-place-wrap">
+            <p class="places__item-place">Греция</p>
+          </div>
+        </li>
+        <li class="places__item places__item--albania">
+          <div class="places__item-action">
+            <a class="places__item-action-link" href="">Смотреть подробнее</a>
+          </div>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/places-Albania-big.jpg">
+            <source media="(min-width: 768px)" srcset="img/places-Albania.jpg">
+            <img src="img/places-Albania.jpg">
+          </picture>
+          <div class="places__item-place-wrap">
+            <p class="places__item-place">Албания</p>
+          </div>
+        </li>
+        <li class="places__item places__item--macedonia">
+          <div class="places__item-action">
+            <a class="places__item-action-link" href="">Смотреть подробнее</a>
+          </div>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/places-Macedonia-big.jpg">
+            <source media="(min-width: 768px)" srcset="img/places-Macedonia.jpg">
+            <img src="img/places-Macedonia.jpg">
+          </picture>
+          <div class="places__item-place-wrap">
+            <p class="places__item-place">Македония</p>
+          </div>
+        </li>
+        <li class="places__item places__item--montenegro">
+          <div class="places__item-action">
+            <a class="places__item-action-link" href="">Смотреть подробнее</a>
+          </div>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/places-Montenegro-big.jpg">
+            <source media="(min-width: 768px)" srcset="img/places-Montenegro.jpg">
+            <img src="img/places-Montenegro.jpg">
+          </picture>
+          <div class="places__item-place-wrap">
+            <p class="places__item-place">Черногория</p>
+          </div>
+        </li>
+        <li class="places__item places__item--croatia">
+          <div class="places__item-action">
+            <a class="places__item-action-link" href="">Смотреть подробнее</a>
+          </div>
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/places-Croatia-big.jpg">
+            <source media="(min-width: 768px)" srcset="img/places-Croatia.jpg">
+            <img src="img/places-Croatia.jpg">
+          </picture>
+          <div class="places__item-place-wrap">
+            <p class="places__item-place">Хорватия</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="countries countries--wrap container">
+      <div class="countries__tab">
+        <button class="countries__btn">Греция</button>
+        <button class="countries__btn">Албания</button>
+        <button class="countries__btn">Македония</button>
+        <button class="countries__btn">Черногория</button>
+        <button class="countries__btn">Хорватия</button>
+      </div>
+
+      <div class="country country--wrap">
+        <div class="country__desc container">
+          <h2 class="country__title">Греция</h2>
+          <p class="country__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных
+            на
+            вершинах скал.
+            Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего
+            путешествия в
+            Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров,
+            наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
+          <a class="btn country__link" href="">Купить тур сейчас</a>
+        </div>
+        <div class="country__feedback">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/country-Greece-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/country-Greece-tablet.jpg">
+            <img class="country__feedback-img" src="img/country-Greece-mobile.jpg">
+          </picture>
+          <div class="country__feedback-wrap">
+            <h4 class="country__feedback-title">Отзывы</h4>
+            <p class="country__feedback-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие
+              же
+              высоченные скалы. Но здесь
+              потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!
+            </p>
+            <p class="country__feedback-author">Влада Голицина</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="prices prices--wrap prices--container">
+      <div class="rates">
+        <div class="rates__content">
+          <h3 class="rates__content-title">Комплексный <span class="rates__content-price">$1999</span></h3>
+          <p class="rates__content-text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+          <ul class="rates__content-list">
+            <li class="rates__content-item">Разработанный маршрут с гидом группы</li>
+            <li class="rates__content-item">Перелет, трансфер и проживание в отелях</li>
+            <li class="rates__content-item">Завтраки, ужины в отелях и ланчи на природе</li>
+            <li class="rates__content-item">Экскурсии по удивительно красивым местам Европы</li>
+          </ul>
+          <a class="btn rates__content-link" href="">Купить тур сейчас</a>
+        </div>
+        <div class="rates__content">
+          <h3 class="rates__content-title">Экономный <span class="rates__content-price">$1399</span></h3>
+          <p class="rates__content-text">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+          <ul class="rates__content-list">
+            <li class="rates__content-item">Разработанный маршрут с гидом группы</li>
+            <li class="rates__content-item">Перелет и трансфер</li>
+            <li class="rates__content-item">Проживание в хостелах при отелях</li>
+            <li class="rates__content-item">Только завтраки в отелях</li>
+            <li class="rates__content-item">Экскурсии по удивительно красивым местам Европы</li>
+          </ul>
+          <a class="btn rates__content-link" href="">Купить тур сейчас</a>
+        </div>
+      </div>
+      <div class="prices__desc">
+        <h2 class="prices__desc-title">Цены</h2>
+        <p class="prices__desc-text">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от
+          Ваших потребностей и
+          возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
+        <p class="prices__desc-contact">Свяжитесь с нами</p>
+        <p class="prices__desc-contact-link">
+          <a class="prices__desc-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="form form--wrap">
+      <div class="form__img container">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="img/form-backdrop-desktop.jpg">
+          <img class="form__img-pic" src="img/form-backdrop-tablet.jpg">
+        </picture>
+        <form class="form__feedback" action="">
+          <div class="form__feedback-inner">
+            <h3 class="form__feedback-title">У Вас остались вопросы?</h3>
+            <p class="form__feedback-text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+            <div class="form__feedback-wrap">
+              <input class="form__feedback-field" type="tel" placeholder="* +7 Введите 10 цифр номера">
+              <input class="form__feedback-field" type="email" placeholder="E-mail">
+            </div>
+            <div class="form__feedback-button-wrap">
+              <input class="btn form__feedback-button" type="submit" value="Отправить">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer container">
+    <div class="page-footer__cities">
+      <h4 class="page-footer__title">Следующие путешествия</h4>
+      <div class="page-footer__cities-list-inner">
+        <ul class="page-footer__cities-list">
+          <li class="page-footer__cities-item">
+            <a class="page-footer__cities-link" href="">Марсель</a>
+          </li>
+          <li class="page-footer__cities-item">
+            <a class="page-footer__cities-link" href="">Ним</a>
+          </li>
+          <li class="page-footer__cities-item">
+            <a class="page-footer__cities-link" href="">Монпелье</a>
+          </li>
+          <li class="page-footer__cities-item">
+            <a class="page-footer__cities-link" href="">Барселона</a>
+          </li>
+          <li class="page-footer__cities-item">
+            <a class="page-footer__cities-link" href="">Пальма</a>
+          </li>
+        </ul>
+        <ul class="page-footer__cities-list">
+          <li class="page-footer__cities-item">
+            <a class="page-footer__cities-link" href="">Сардиния</a>
+          </li>
+          <li class="page-footer__cities-item">
+            <a class="page-footer__cities-link" href="">Палермо</a>
+          </li>
+          <li class="page-footer__cities-item">
+            <a class="page-footer__cities-link" href="">Катания</a>
+          </li>
+          <li class="page-footer__cities-item">
+            <a class="page-footer__cities-link" href="">Неаполь</a>
+          </li>
+          <li class="page-footer__cities-item">
+            <a class="page-footer__cities-link" href="">Рим</a>
+          </li>
+        </ul>
+        <ul class="page-footer__cities-list">
+          <li class="page-footer__cities-item">
+            <a class="page-footer__cities-link" href="">Корс</a>
+          </li>
+          <li class="page-footer__cities-item">
+            <a class="page-footer__cities-link" href="">Ницца</a>
+          </li>
+          <li class="page-footer__cities-item">
+            <a class="page-footer__cities-link" href="">Монако</a>
+          </li>
+          <li class="page-footer__cities-item">
+            <a class="page-footer__cities-link" href="">Динь-ле-Бен</a>
+          </li>
+          <li class="page-footer__cities-item">
+            <a class="page-footer__cities-link" href="">Гренобль</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-footer__contacts">
+      <h4 class="page-footer__title">Наши контакты</h4>
+      <div class="page-footer__contacts-link">
+        <a class="page-footer__contacts-link-mail" href="mailto:puteshestviemechta@gmail.ru">
+          <svg class="page-footer__contacts-link-mail-icon" width="26" height="20" viewBox="0 0 26 20" fill="none">
+            <path
+              d="M24.2273 0H1.77273C0.768182 0 0 0.764706 0 1.76471V18.2353C0 19.2353 0.768182 20 1.77273 20H24.2273C25.2318 20 26 19.2353 26 18.2353V1.76471C26 0.764706 25.2318 0 24.2273 0ZM24.2273 17L19.5591 12.3529C19.2045 12 18.6727 12 18.3182 12.3529C17.9636 12.7059 17.9636 13.2353 18.3182 13.5882L22.9864 18.2353H3.01362L7.68182 13.5882C8.03636 13.2353 8.03636 12.7059 7.68182 12.3529C7.32727 12 6.79547 12 6.44092 12.3529L1.77273 17V5.70585L12.4091 13.7059C12.5864 13.8236 12.7636 13.8823 12.9409 13.8823C13.1182 13.8823 13.2954 13.8236 13.4727 13.7059L24.2273 5.70585V17ZM24.2273 1.76471V3.4706L12.9409 11.8235L1.77273 3.4706V1.76471H24.2273Z"
+              fill="#D7D9DF" />
+          </svg>
+          puteshestviemechta@gmail.ru</a>
+        <a class="page-footer__contacts-link-phone" href="tel:+749978468446">
+          <svg class="page-footer__contacts-link-phone-icon" width="17" height="24" viewBox="0 0 17 24" fill="none">
+            <path class="page-footer__contacts-link-pic"
+              d="M1.39635 6.62432C1.31179 5.42623 1.57753 4.24606 2.28114 3.29684C2.89115 2.43632 3.68536 1.96636 4.64264 1.69172C5.44893 1.4525 5.9774 1.74561 6.20992 2.64204C6.54211 3.98224 7.01622 5.3225 7.18836 6.73361C7.24271 7.35485 6.84108 8.23322 6.40623 8.6856C5.31608 9.75888 5.54257 10.5399 6.37 12.1643C6.62669 12.6881 7.03436 13.5934 7.82858 14.7919C8.65601 15.9992 9.09389 16.6472 10.1569 16.0975C11.3376 15.5035 12.1983 15.8855 13.0891 16.8444C13.6931 17.5369 14.3574 18.1318 14.9614 18.8243C15.8341 19.8542 15.7949 20.5641 15.1124 21.2915C13.8833 22.6309 11.854 23.0736 10.3441 22.1766C9.51064 21.6881 8.68018 21.0487 8.01884 20.303C5.10471 16.9825 3.00291 13.1212 1.73759 8.76321C1.53526 8.02654 1.44165 7.28104 1.39635 6.62432Z"
+              stroke-width="2" stroke-miterlimit="10" />
+          </svg>
+          +7 (499) -784-684-46</a>
+      </div>
+    </div>
+    <div class="page-footer__corporate">
+      <h4 class="page-footer__title">Корпоративные путешествия</h4>
+
+      <p class="page-footer__corporate-text">Также вы можете заказать индивидуальное путешествие под вашу компанию.
+        Подобные туры очень сближают компанию,
+        помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
+    </div>
+  </footer>
+
+  <!-- Модальные окна -->
+  <section class="modal modal-buy">
+    <form action="">
+      <div class="modal-buy__inner">
+        <img src="img/modal-img.jpg" width="338" height="444" alt="">
+        <div class="modal-buy__wrap">
+          <h4 class="modal-buy__title">Купить тур</h4>
+          <div class="modal-buy__contacts">
+            <input type="tel">
+            <input type="email">
+          </div>
+          <div class="">
+            <input class="" type="submit" value="Отправить">
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <section class="modal modal-success">
+    <div class="modal-success__inner">
+      <p class="modal-success__text">Форма успешно отправлена, спасибо! :)</p>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

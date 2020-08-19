@@ -1,0 +1,30 @@
+.modal {
+  width: 728px;
+  display: none;
+}
+
+.modal-buy__inner {
+  display: flex;
+
+  background-color: $light;
+}
+
+.modal-buy__wrap {
+  padding: 70px 60px 85px;
+}
+
+.modal-success__inner {
+  padding: 179px 164px;
+
+  background-color: $light;
+}
+
+.modal-success__text {
+  @include reset;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 43px;
+
+  text-align: center;
+  color: #48494D;
+}

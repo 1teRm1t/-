@@ -1,0 +1,19 @@
+.btn {
+  display: inline-block;
+  width: 250px;
+  padding: 30px 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  vertical-align: top;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $pink;
+
+  &:hover,
+  &:focus {
+    background-color: $orange;
+  }
+}

@@ -1,0 +1,260 @@
+.places--wrap {
+  margin-bottom: 5px;
+}
+
+.places__title-inner {
+  margin-bottom: 19px;
+
+  text-align: center;
+}
+
+.places__title {
+  @include reset;
+  position: relative;
+  padding-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.places__text {
+  @include reset;
+
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.466667px;
+
+  color: rgba(44, 46, 63, 0.7);
+}
+
+.places__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @include reset-list;
+}
+
+.places__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  margin-bottom: 35px;
+  height: 425px;
+}
+
+.places__item-action {
+  position: absolute;
+  display: none;
+
+  padding: 174.5px 11px;
+
+  z-index: 1;
+}
+
+.places__item:hover .places__item-action {
+  display: block;
+  background: rgba(20, 21, 23, 0.6);
+}
+
+.places__item-action-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 264px;
+  height: 75px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: $white;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.places__item-place-wrap {
+  position: absolute;
+  width: 215px;
+  margin-bottom: -1px;
+  padding: 16px 0;
+
+  text-align: center;
+
+  background-color: $white;
+  z-index: 2;
+}
+
+.places__item-place {
+  @include reset;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .places--wrap {
+    margin-bottom: 80px;
+  }
+
+  .places__title-inner {
+    margin-bottom: 38px;
+  }
+
+  .places__title {
+    padding-bottom: 21px;
+
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .places__text {
+    max-width: 343px;
+    margin: 0 auto;
+  }
+
+  .places__list {
+    padding: 0 44px;
+  }
+
+  .places__item {
+    margin-bottom: 20px;
+
+    &:nth-child(3) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .places {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+  .places--wrap {
+    margin-bottom: 95px;
+  }
+
+  .places__title-inner {
+    max-width: 358px;
+    margin-bottom: 55px;
+
+    text-align: left;
+  }
+
+  .places__title {
+    @include reset;
+    position: relative;
+    padding-bottom: 60px;
+
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 80px;
+    letter-spacing: -1.245px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 30px;
+
+      width: 228px;
+      height: 4px;
+
+      background-color: $pink;
+    }
+  }
+
+  .places__text {
+    @include reset;
+
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.466667px;
+
+    color: rgba(44, 46, 63, 0.7);
+  }
+
+  .places__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @include reset-list;
+  }
+
+  .places__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    margin-right: 60px;
+    margin-bottom: 100px;
+    width: 350px;
+    height: 430px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .places__item-action {
+    position: absolute;
+    display: none;
+
+    padding: 176.5px 42px;
+
+    z-index: 1;
+  }
+
+  .places__item:hover .places__item-action {
+    display: block;
+    background: rgba(20, 21, 23, 0.6);
+  }
+
+  .places__item-action-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 264px;
+    height: 75px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: $white;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+  }
+
+  .places__item-place-wrap {
+    position: absolute;
+    width: 215px;
+    margin-bottom: -1px;
+    padding: 16px 0;
+
+    text-align: center;
+
+    background-color: $white;
+    z-index: 2;
+  }
+
+  .places__item-place {
+    @include reset;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}

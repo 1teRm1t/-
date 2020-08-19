@@ -1,0 +1,171 @@
+.prices {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.prices--container {
+  width: 288px;
+  margin: 0 auto 50px;
+  padding: 0 17px 0 15px;
+}
+
+.prices__desc {
+  padding: 125px 10px 20px;
+
+  text-align: center;
+}
+
+.prices__desc-title {
+  @include reset;
+  position: relative;
+  padding-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.prices__desc-text {
+  @include reset;
+  padding-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 27px;
+
+  color: rgba(44, 46, 63, 0.7);
+}
+
+.prices__desc-contact {
+  @include reset;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  text-align: center;
+
+  color: $black;
+}
+
+.prices__desc-contact-link {
+  @include reset;
+}
+
+.prices__desc-link {
+  position: relative;
+
+  font-size: 18px;
+  line-height: 32px;
+
+  text-decoration: underline;
+  color: $pink;
+}
+
+@media (min-width: $tablet-width) {
+  .prices--container {
+    width: 726px;
+    margin: 0 auto 116px;
+    padding: 0 21px;
+  }
+
+  .prices__desc {
+    padding-top: 95px;
+  }
+
+  .prices__desc-title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .prices__desc-text {
+    padding-bottom: 33px;
+  }
+
+  .prices__desc-contact {
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .prices {
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .prices--wrap {
+    margin-bottom: 125px;
+  }
+
+  .prices__desc {
+    width: 299px;
+    padding: 125px 0 20px;
+  }
+
+  .prices__desc-title {
+    @include reset;
+    position: relative;
+    padding-bottom: 50px;
+
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 90px;
+    text-align: left;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 30px;
+
+      width: 175px;
+      height: 2.92px;
+
+      background-color: $pink;
+    }
+  }
+
+  .prices__desc-text {
+    @include reset;
+    padding-bottom: 50px;
+
+    font-size: 16px;
+    line-height: 27px;
+    text-align: left;
+
+    color: rgba(44, 46, 63, 0.7);
+  }
+
+  .prices__desc-contact {
+    @include reset;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+
+    color: $black;
+  }
+
+  .prices__desc-link {
+    position: relative;
+
+    font-size: 20px;
+    line-height: 32px;
+
+    color: #000000;
+
+    &::before {
+      position: absolute;
+      content: "";
+
+      top: 0;
+      left: -40px;
+      width: 30px;
+      height: 25px;
+
+      background-image: url("../../img/icon-phone.png");
+      background-repeat: no-repeat;
+    }
+  }
+}

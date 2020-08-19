@@ -1,0 +1,89 @@
+.countries {
+  position: relative;
+}
+
+.countries__tab {
+  display: flex;
+  width: 899px;
+  margin-bottom: 3px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+  overflow: hidden;
+}
+
+.countries__btn {
+  margin-right: 99px;
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.415px;
+
+  background-color: inherit;
+  color: rgba(44, 46, 63, 0.3);
+
+  border: none;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {}
+
+@media (min-width: $desktop-width) {
+  .countries {
+    position: relative;
+
+
+    &::before {
+      position: absolute;
+      content: "";
+
+      top: 120px;
+      left: -100px;
+      width: 1444px;
+      min-height: 1089px;
+
+      background-image: url("../../img/map-backdrop.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      
+      z-index: -1;
+    }
+  }
+
+  .countries__tab {
+    display: flex;
+    width: 899px;
+    margin-bottom: 80px;
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+    overflow: hidden;
+  }
+
+  .countries__btn {
+    margin-right: 99px;
+    padding: 0;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.415px;
+
+    background-color: inherit;
+    color: rgba(44, 46, 63, 0.3);
+
+    border: none;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,283 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 11px 80px;
+
+  text-align: center;
+}
+
+.page-footer__cities {
+  position: relative;
+}
+
+.page-footer__contacts {
+  position: relative;
+
+  border-top: 1px solid #D7D9DF;
+  border-bottom: 1px solid #D7D9DF;
+}
+
+.page-footer__title {
+  @include reset;
+  padding-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.page-footer__cities-list-inner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  padding: 0 40px 0 30px;
+}
+
+.page-footer__cities-list {
+  @include reset-list;
+}
+
+.page-footer__cities-item {
+  padding-bottom: 10px;
+}
+
+.page-footer__cities-link {
+  color: rgba(20, 21, 23, 0.5);
+}
+
+.page-footer__contacts-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__contacts-link-mail {
+  position: relative;
+  padding-bottom: 20px;
+
+  text-decoration-line: underline;
+  color: $pink;
+}
+
+.page-footer__contacts-link-mail-icon {
+  position: absolute;
+  left: -38px;
+}
+
+.page-footer__contacts-link-phone {
+  position: relative;
+  font-size: 16px;
+  line-height: 32px;
+
+  text-decoration-line: underline;
+  color: $pink;
+}
+
+.page-footer__contacts-link-phone-icon {
+  position: absolute;
+  left: -31px;
+}
+
+.page-footer__contacts-link-pic {
+  stroke: #D7D9DF;
+}
+
+.page-footer__corporate-text {
+  @include reset;
+  max-width: 320px;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  color: rgba(20, 21, 23, 0.5);
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 21px 50px;
+
+    text-align: left;
+  }
+
+  .page-footer__cities {
+    margin-right: 101px;
+  }
+
+  .page-footer__cities-list-inner {
+    padding: 0;
+  }
+
+  .page-footer__cities-list {
+
+    &:first-child {
+      padding-right: 46px;
+    }
+
+    &:nth-child(2) {
+      padding-right: 50px;
+    }
+  }
+
+  .page-footer__contacts {
+    border: none;
+  }
+
+  .page-footer__corporate {
+    margin-top: 49px;
+
+    text-align: center;
+  }
+
+  .page-footer__corporate-text {
+    max-width: 726px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+
+  .page-footer__cities {
+    position: relative;
+    width: 390px;
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      top: 0;
+      right: 0;
+
+      height: 189px;
+
+      border: 1px solid #D7D9DF;
+    }
+  }
+
+  .page-footer__contacts {
+    position: relative;
+    width: 390px;
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      top: 0;
+      right: 0;
+
+      height: 189px;
+
+      border: 1px solid #D7D9DF;
+    }
+  }
+
+  .page-footer__contacts .page-footer__title {
+    padding-left: 0;
+  }
+
+  .page-footer__corporate {
+    width: 390px;
+  }
+
+  .page-footer__corporate .page-footer__title {
+    padding-left: 33px;
+  }
+
+  .page-footer__title {
+    @include reset;
+    padding-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .page-footer__cities-list-inner {
+    display: flex;
+  }
+
+  .page-footer__cities-list {
+    @include reset-list;
+    padding-right: 50px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  .page-footer__cities-item {
+    padding-bottom: 10px;
+  }
+
+  .page-footer__cities-link {
+    font-size: 14px;
+    line-height: 17px;
+
+    color: rgba(20, 21, 23, 0.5);
+  }
+
+  .page-footer__contacts-link {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 40px;
+  }
+
+  .page-footer__contacts-link-mail {
+    position: relative;
+    padding-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 17px;
+
+    text-decoration-line: underline;
+    color: $pink;
+  }
+
+  .page-footer__contacts-link-mail-icon {
+    position: absolute;
+    left: -38px;
+  }
+
+  .page-footer__contacts-link-phone {
+    position: relative;
+    font-size: 16px;
+    line-height: 32px;
+
+    text-decoration-line: underline;
+    color: $pink;
+  }
+
+  .page-footer__contacts-link-phone-icon {
+    position: absolute;
+    left: -31px;
+  }
+
+  .page-footer__contacts-link-pic {
+    stroke: #D7D9DF;
+  }
+
+  .page-footer__corporate {
+    margin-top: 0;
+  }
+
+  .page-footer__corporate-text {
+    @include reset;
+    padding-left: 49px;
+    max-width: 320px;
+
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+
+    color: rgba(20, 21, 23, 0.5);
+  }
+}

@@ -1,0 +1,30 @@
+.page-header__logo-wrap {
+  padding: 18px 55px 14px 16px;
+}
+
+.page-header__logo {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-wrap {
+    padding: 18px 80px 15px 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo {
+    display: block;
+    width: 58px;
+    height: 22px;
+  }
+}
